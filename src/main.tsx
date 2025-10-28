@@ -4,7 +4,10 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App.tsx";
 import { Provider } from "./provider.tsx";
+import { Buffer } from "buffer";
 import "@/styles/globals.css";
+
+window.Buffer = Buffer;
 
 // 初始化钱包配置
 import "./config/wallet.ts";
